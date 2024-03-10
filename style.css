@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+background: #FFFFFF;
+background: #F67669;
+font-family: "Poppins", sans-serif;
+font-family: "Staatliches", sans-serif;
+*/
+
+body {
+  background: #BFD7E4;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body::before {
+  content: '';
+  background: #293241;
+  position: absolute;
+  z-index: -1;
+  height: 465px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#page {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 107px 0 349px;
+  margin: 0 345px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750px;
+}
+
+header h1 {
+  color: #FFF;
+
+  font-family: "Staatliches", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  text-align: center;
+}
+
+header p {
+  color: #FFF;
+  
+    font-size: 16px;
+  text-align: center;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 32px;
+}
+
+#info {
+  padding: 50px 275px;
+  border-radius: 20px 20px 0px 0px ;
+  background: #F67669;
+
+  color: #FFF;
+
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+
+  width: 750px;
+  height: 133px;
+}
+
+form {
+  padding: 30px 64px 64px;
+  background: #FFFFFF;
+  width: 750px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+input, textarea, select {
+  width: 100%;
+  height: 55px;
+
+  padding: 5px 20px 8px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #E6E6F0);
+  background: var(--Shapes-02, #FAFAFC);
+
+  color: #4E4958;
+  
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+}
+
+textarea {
+  height: 166px;
+}
+
+select {
+  width: 300px;
+}
+
+label {
+  color: #4E4958;
+  
+  font-size: 14px;
+  line-height: 24px;
+}
+
+span {
+  color: #C1BCCC;
+  
+  font-size: 12px;
+  line-height: 20px;
+}
+
+span:hover {
+  color: #706d75;
+}
+
+legend {
+  color: #253B51;
+
+  font-family: "Staatliches", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+
+  padding: 36px 0 8px;
+  margin-bottom: 31px;
+  text-align: center;
+
+  border-bottom: 1px solid #E6E6F0;
+}
+
+#nameEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#nameLastName {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+}
+#name, #lastName {
+  width: 300px;
+}
+
+#mentorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#selectMentorName {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapperCheckbox {
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapperCheckbox input {
+  opacity: 0;
+
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+
+.input-wrapperCheckbox label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-wrapperCheckbox label::before {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+.input-wrapperCheckbox input:focus + label::before {
+  outline: 2px solid black;
+}
+
+.input-wrapperCheckbox input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.input-wrapperDateTime {
+  display: flex;
+  gap: 32px;  
+}
+
+.input-wrapperDate {
+  display: flex;
+  gap: 10px;  
+}
+
+button {
+  margin-top: 64px;
+  color: #FFF;
+
+  font-family: "Staatliches", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
+  padding: 14px 40px;
+  background: #F67669;
+
+  width: 622px;
+  height: 51px;
+
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e56b5e;
+}
